@@ -19,6 +19,7 @@ Evaluation Metrics: Model performance tracked using accuracy and loss plots.
 Modular Codebase: Clean, readable, and well-structured Python modules for training, preprocessing, and inference.
 
 Installation & Setup
+
 Clone the repository
 git clone https://github.com/yourusername/pnemoHedoc.git
 cd pnemoHedoc
@@ -29,35 +30,17 @@ source venv/bin/activate   # For Windows: venv\Scripts\activate
 
 Install required dependencies
 pip install -r requirements.txt
-🧠 Model Training
 
+Model Training
 Run the training script after configuring parameters:
 python model/train_model.py
+
 The script handles:
-
 Defining the CNN architecture
-
 Compiling with Adam optimizer and binary_crossentropy
-
 Training the model with configurable batch size, learning rate, and data paths
-
 You can modify these hyperparameters directly within train_model.py.
 
-📁 Dataset Structure
-You can use public datasets like the Kaggle Pneumonia Chest X-ray Dataset, or your own labeled dataset.
-
-Expected Folder Structure:
-
-css
-Copy
-Edit
-dataset/
-├── train/
-│   ├── NORMAL/
-│   └── PNEUMONIA/
-└── val/
-    ├── NORMAL/
-    └── PNEUMONIA/
 
 Future Enhancements
 Multi-class Classification: Extend model to distinguish between bacterial vs. viral pneumonia
