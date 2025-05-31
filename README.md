@@ -3,19 +3,12 @@ PneumoHedoc is a deep learning-based image classification project aimed at detec
 
 Key Features
 CNN Architecture: Custom Convolutional Neural Network built with Keras Sequential API for binary classification.
-
 Data Preprocessing: Includes image augmentation (rotation, flipping, rescaling) and efficient batch loading using ImageDataGenerator.
-
 Model Training: Trains with support for:
-
 Class weights to handle data imbalance
-
 Validation split
-
 Configurable batch size and epoch settings
-
 Evaluation Metrics: Model performance tracked using accuracy and loss plots.
-
 Modular Codebase: Clean, readable, and well-structured Python modules for training, preprocessing, and inference.
 
 Installation & Setup
