@@ -1,46 +1,66 @@
 PneumoHedoc: Pneumonia Detection Using CNN
-Project Overview
-PneumoHedoc is a deep learning-based image classification project designed to detect pneumonia from chest X-ray images. This project implements a Convolutional Neural Network (CNN) using Keras with TensorFlow backend, trains it on a dataset of X-ray images.
+PneumoHedoc is a deep learning-based image classification project aimed at detecting pneumonia from chest X-ray images using Convolutional Neural Networks (CNNs). Built with the Keras Sequential API and powered by TensorFlow, this solution focuses on accurate, scalable, and modular pneumonia diagnosis support.
 
-Features
-CNN model built with Keras Sequential API
-Data preprocessing with image augmentation and batching
-Model training with support for class weights, validation split, and batch iteration
-Model evaluation using accuracy and loss metrics
-Clean and modular Python code
+Key Features
+CNN Architecture: Custom Convolutional Neural Network built with Keras Sequential API for binary classification.
 
-Installation
-Clone the repository:
+Data Preprocessing: Includes image augmentation (rotation, flipping, rescaling) and efficient batch loading using ImageDataGenerator.
+
+Model Training: Trains with support for:
+
+Class weights to handle data imbalance
+
+Validation split
+
+Configurable batch size and epoch settings
+
+Evaluation Metrics: Model performance tracked using accuracy and loss plots.
+
+Modular Codebase: Clean, readable, and well-structured Python modules for training, preprocessing, and inference.
+
+Installation & Setup
+Clone the repository
 git clone https://github.com/yourusername/pnemoHedoc.git
 cd pnemoHedoc
 
-Set up a Python virtual environment (recommended):
-python -m venv myenv
-source myenv/bin/activate        # On Windows: myenv\Scripts\activate
+Create a virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate   # For Windows: venv\Scripts\activate
 
-Install dependencies:
+Install required dependencies
 pip install -r requirements.txt
+🧠 Model Training
 
-Training the Model
-Modify and run the training script:
+Run the training script after configuring parameters:
 python model/train_model.py
-This script defines the CNN architecture, compiles the model, and trains it on your dataset. Adjust parameters such as epochs, batch size, and data paths in the script.
+The script handles:
 
-Dataset
-Use a public pneumonia chest X-ray dataset (e.g., Kaggle Pneumonia Dataset) or your own labeled dataset of images. Organize your data in subfolders for training and validation.
+Defining the CNN architecture
 
-Troubleshooting
-Large files error pushing to GitHub: Use .gitignore to exclude virtual environments and large binary files (e.g., model weights).
-Activation attribute error: Ensure you use compatible versions of TensorFlow and Keras.
-Streamlit app not loading: Confirm Streamlit is installed and run streamlit run app.py from the project root.
+Compiling with Adam optimizer and binary_crossentropy
 
-Future Work
-Add multi-class classification (e.g., bacterial vs viral pneumonia)
-Improve accuracy with transfer learning (e.g., using pre-trained ResNet or EfficientNet)
-Deploy the app on cloud platforms like Heroku or AWS
+Training the model with configurable batch size, learning rate, and data paths
 
+You can modify these hyperparameters directly within train_model.py.
 
+📁 Dataset Structure
+You can use public datasets like the Kaggle Pneumonia Chest X-ray Dataset, or your own labeled dataset.
 
+Expected Folder Structure:
 
+css
+Copy
+Edit
+dataset/
+├── train/
+│   ├── NORMAL/
+│   └── PNEUMONIA/
+└── val/
+    ├── NORMAL/
+    └── PNEUMONIA/
 
+Future Enhancements
+Multi-class Classification: Extend model to distinguish between bacterial vs. viral pneumonia
+Transfer Learning: Improve accuracy using pre-trained models like ResNet, EfficientNet, or MobileNet
+Deployment: Package the model into a Streamlit web app and deploy to platforms such as Heroku, AWS, or Streamlit Cloud
 
