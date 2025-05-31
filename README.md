@@ -1,42 +1,62 @@
-PneumoHedoc: Pneumonia Detection Using CNN
-PneumoHedoc is a deep learning-based image classification project aimed at detecting pneumonia from chest X-ray images using Convolutional Neural Networks (CNNs). Built with the Keras Sequential API and powered by TensorFlow, this solution focuses on accurate, scalable, and modular pneumonia diagnosis support.
-
-Key Features
-CNN Architecture: Custom Convolutional Neural Network built with Keras Sequential API for binary classification.
-Data Preprocessing: Includes image augmentation (rotation, flipping, rescaling) and efficient batch loading using ImageDataGenerator.
-Model Training: Trains with support for:
-Class weights to handle data imbalance
-Validation split
-Configurable batch size and epoch settings
-Evaluation Metrics: Model performance tracked using accuracy and loss plots.
-Modular Codebase: Clean, readable, and well-structured Python modules for training, preprocessing, and inference.
-
-Installation & Setup
-
-Clone the repository
-git clone https://github.com/yourusername/pnemoHedoc.git
-cd pnemoHedoc
-
-Create a virtual environment (recommended)
-python -m venv venv
-source venv/bin/activate   # For Windows: venv\Scripts\activate
-
-Install required dependencies
-pip install -r requirements.txt
-
-Model Training
-Run the training script after configuring parameters:
-python model/train_model.py
-
-The script handles:
-Defining the CNN architecture
-Compiling with Adam optimizer and binary_crossentropy
-Training the model with configurable batch size, learning rate, and data paths
-You can modify these hyperparameters directly within train_model.py.
-
-
-Future Enhancements
-Multi-class Classification: Extend model to distinguish between bacterial vs. viral pneumonia
-Transfer Learning: Improve accuracy using pre-trained models like ResNet, EfficientNet, or MobileNet
-Deployment: Package the model into a Streamlit web app and deploy to platforms such as Heroku, AWS, or Streamlit Cloud
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PneumoHedoc: Pneumonia Detection Using CNN</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    pre {
+      background: #ecf0f1;
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    code {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>PneumoHedoc: Pneumonia Detection Using CNN</h1>
+    <p><strong>PneumoHedoc</strong> is a deep learning-based image classification project aimed at detecting pneumonia from chest X-ray images using Convolutional Neural Networks (CNNs). Built with the Keras Sequential API and powered by TensorFlow, this solution focuses on accurate, scalable, and modular pneumonia diagnosis support.</p>
+    
+    <div class="section">
+      <h2>🔍 Key Features</h2>
+      <ul>
+        <li><strong>CNN Architecture:</strong> Custom CNN built using the Keras Sequential API for binary classification.</li>
+        <li><strong>Data Preprocessing:</strong> Includes image augmentation (rotation, flipping, rescaling) and efficient loading via <code>ImageDataGenerator</code>.</li>
+        <li><strong>Model Training:</strong> Supports class weighting, validation splits, and configurable batch sizes and epochs.</li>
+        <li><strong>Evaluation Metrics:</strong> P
