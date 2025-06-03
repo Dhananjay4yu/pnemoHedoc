@@ -3,7 +3,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10-blue" alt="Python Version">
   <img src="https://img.shields.io/badge/Framework-Keras%20%7C%20TensorFlow-orange" alt="Framework">
-  <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
 </p>
 
 <p align="center">
@@ -83,8 +82,5 @@ pip install -r requirements.txt
 </code></pre>
 
 <hr>
-
-<h2>📌 License</h2>
-<p>Distributed under the MIT License. See <code>LICENSE</code> for more information.</p>
 
 <p align="center">💙 Built with passion for saving lives through technology 💙</p>
